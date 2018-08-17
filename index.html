@@ -82,18 +82,23 @@
 				</div>
 				<div class="col-xs-8 text-right menu-1">
 					<ul>
-						<li class="active"><a href="index.html">Home</a></li>
-						<li><a href="mysesto.html">MySesto</a></li>
 						<li class="has-dropdown">
 							<a href="destination.html">Destinations</a>
-
+							<ul class="dropdown">
+								<li><a href="indexen.html">En avion</a></li>
+								<li><a href="indexsk.html">En autobus</a></li>
+								<li><a href="#">Au ski</a></li>
+								<li><a href="#">Citytrips</a></li>
+							</ul>
 						</li>
+						<li><a href="groupes.html">Last Minutes</a></li>
 						<li class="has-dropdown">
 							<a href="youth.html">-26 ANS</a>
 						</li>
 						<li><a href="groupes.html">Groupes</a></li>
 						<li><a href="groupes.html">Events</a></li>
 						<li><a href="surprise.html">Surprise</a></li>
+						<li><a href="mysesto.html">MySesto</a></li>
 						<li class="has-dropdown">
 							<a href="services.html">FR</a>
 							<ul class="dropdown">
@@ -102,6 +107,7 @@
 								<li><a href="#">ES</a></li>
 								<li><a href="#">AR</a></li>
 							</ul>
+
 						</li>
 					</ul>
 				</div>
@@ -131,23 +137,6 @@
 											<form action="#">
 												<div class="row form-group">
 													<div class="col-md-12">
-														<label for="fullname">Votre Nom</label>
-														<input type="text" id="fullname" class="form-control">
-													</div>
-												</div>
-												<div class="row form-group">
-													<div class="col-md-12">
-														<label for="activities">Activité</label>
-														<select name="#" id="activities" class="form-control">
-															<option value="">Circuits</option>
-															<option value="">Citytrip</option>
-															<option value="">Sports</option>
-															<option value="">Spa&Thermes</option>
-														</select>
-													</div>
-												</div>
-												<div class="row form-group">
-													<div class="col-md-12">
 														<label for="destination">Destination</label>
 														<select name="#" id="destination" class="form-control">
 															<option value="">Philippines</option>
@@ -157,11 +146,22 @@
 														</select>
 													</div>
 												</div>
+												<div class="row form-group">
+													<div class="col-md-12">
+															<div class="input-field">
+																<label for="date-start">Check In</label>
+																<input type="text" class="form-control" id="date-start" />
+															</div>
+
+													</div>
+												</div>
 
 												<div class="row form-group">
 													<div class="col-md-12">
-														<label for="date-start">Date de départ</label>
-														<input type="text" id="date-start" class="form-control">
+														<div class="input-field">
+															<label for="date-end">Check Out</label>
+															<input type="text" class="form-control" id="date-end" />
+														</div>
 													</div>
 												</div>
 
@@ -499,7 +499,6 @@
 	<script src="js/jquery.countTo.js"></script>
 
 	<!-- Stellar Parallax -->
-	<script src="js/jquery.stellar.min.js"></script>
 
 	<!-- Magnific Popup -->
 	<script src="js/jquery.magnific-popup.min.js"></script>
